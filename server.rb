@@ -67,7 +67,7 @@ def send_status(include_playing = false)
 end
 
 EM.run {
-  EM::WebSocket.run(:host => "0.0.0.0", :port => 8080) do |ws|
+  EM::WebSocket.run(:host => (ENV['BIND'] || '127.0.0.1'), :port => (ENV['port'] || 8080).to_i) do |ws|
     ws.onopen { |handshake|
       puts "WebSocket connection open"
 
