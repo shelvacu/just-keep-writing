@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Just keep writing...</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="name-chooser-box">
+      <label>
+	Enter a name for yourself:
+	<input id="name-input" type="text" />
+      </label>
+      <button id="name-submit" type="button"> Choose this name </button>
+    </div>
+    <div id="game" style="display:none">
+      <h3>Just Keep Writing 0.1</h3>
+      Your name:
+      <span id="user-name"></span>
+      <br />
+      Currently playing:
+      <span id="playing-name"></span>
+      <br />
+      <br />
+      Time left:
+      <span id="time-left"></span>
+      <br />
+      <br />
+      <div id="text-box" style="width: 90%; min-height: 100px; border: 1px solid black; padding: 5px;"></div>
+    </div>
+  </body>
+</html>
